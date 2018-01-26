@@ -163,7 +163,11 @@ body {
 #copyright a {
     color: #666
 }
+@media(min-device-width:375px)and(max-device-width:667px)and(-webkit-min-device-pixel-ratio:2){
 
+    html{font-size:117.1875px;}
+
+}
 @media screen and (max-width: 767px) {
     #note {
         float:none;
