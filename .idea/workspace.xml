@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08468944-4fa2-456b-b545-933fd0f1b23a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/default.css" afterPath="$PROJECT_DIR$/css/default.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/functions.js" afterPath="$PROJECT_DIR$/js/functions.js" />
-    </list>
+    <list default="true" id="08468944-4fa2-456b-b545-933fd0f1b23a" name="Default" comment="" />
     <ignored path="love.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -252,12 +248,12 @@
       <updated>1487432694991</updated>
       <workItem from="1487432696924" duration="1875000" />
       <workItem from="1516934845322" duration="6549000" />
-      <workItem from="1516950732741" duration="3441000" />
+      <workItem from="1516950732741" duration="3734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11865000" />
+    <option name="totallyTimeSpent" value="12158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
