@@ -45,7 +45,9 @@
 				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
 				i.marry(u);<br />
 				i.liveHappilyWith(u);<br />-->
+
 			</div>
+
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
@@ -57,6 +59,11 @@
 						Love u forever and ever.<br/>
 						<div class="signature">- 党鑫</div>
 					</div>
+				</div>
+			</div>
+			<div id="chanPin" style="margin-top:-200px;width:440px;height:400px;position: relative;float: left">
+				<div>
+					<img id="img1" style="width:440px;height:400px;"  src="res/0.jpg"/>
 				</div>
 			</div>
 		</div>
@@ -74,7 +81,20 @@
 		together.setMinutes(0);
 		together.setSeconds(0);
 		together.setMilliseconds(0);
-		
+        var phoneWidth = parseInt(window.screen.width);
+        var phoneScale = phoneWidth/640;
+        var ua = navigator.userAgent;
+        if (/Android (\d+\.\d+)/.test(ua)){
+            var version = parseFloat(RegExp.$1);
+            if(version>2.3){
+                document.write('<meta name="viewport" content="width=640, minimum-scale = ‘+phoneScale+‘, maximum-scale = ‘+phoneScale+‘, target-densitydpi=device-dpi">');
+            }else{
+                document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+            }
+        } else {
+            document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+        }
+
 		if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
@@ -97,6 +117,27 @@
 			adjustCodePosition();
 			$("#code").typewriter();
 		}
+
+
+        var i = 0;//定义一个全局变量,也就对应着图片的名称，这里有5张图片
+        $(function () {
+            var myInterval = setInterval("func()", 2500);//设置每隔1000毫秒调用一个func()函数
+        });
+        function getIndex(index) {//函数的目的是判断全局变量i是否超出范围
+            if (index >= 6) {//如果超出范围，除以5取余即可(这种方法很常见也很重要!)
+                return index % 6;
+            }
+            else {
+                return index;//没有超出范围，就返回本身
+            }
+        }
+        function func() {//利用attr对image的src属性进行修改
+            i++;
+            $("#img1").attr("src", "res/" + getIndex(i) + ".jpg");
+
+
+
+        }
 	</script>
 </body>
 </html>
