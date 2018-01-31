@@ -51,7 +51,7 @@
 
 			</div>
 
-			<div id="loveHeart">
+			<div id="loveHeart" style="margin-top: 50px">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
@@ -64,7 +64,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="chanPin" style="margin-top:-200px;width:440px;height:400px;position: relative;float: left">
+			<div id="chanPin" style="margin-top:-400px;width:440px;height:400px;position: relative;float: left">
 				<div>
 					<img id="img1" style="width:440px;height:400px;"  src="res/0.jpg"/>
 				</div>
@@ -114,12 +114,12 @@
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
-			}, 5000);
+			}, 10000);
 
 			timeElapse(together);
 			setInterval(function () {
 				timeElapse(together);
-			}, 500);
+			}, 1000);
 
 			adjustCodePosition();
 			$("#code").typewriter();
